@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SendIt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/01d80fa9dd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header center">
+        <div class="header__top">
+            <a href="index.html" class="header__logo"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <input class="header__switcher" type="checkbox" id="menu">
+            <label class="header__open" for="menu"><i class="fas fa-bars"></i></label>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__list"><a href="#" class="menu__link">Главная</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Отзывы</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Гарантии</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Описание</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Партнёры</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Преимущества</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">FAQ</a></li>
+                </ul>
+                <label class="header__close" for="menu"><i class="fas fa-times"></i></label>
+            </nav>
+        </div>
+        <div class="send-box">
+            <h2 class="send-box__h2">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h2>
+            <h3 class="send-box__h3">А посылка доедет сама</h3>
+            <button class="button button__long">отправить посылку</button>
+        </div>
+    </header>
+    <section>
+        <article class="aggregator center">
+            <img class="aggregator__img" src="img/send-box_img.png" alt="">
+            <div class="aggregator__content">
+                <h3 class="content__h3">Мы – агрегатор служб доставки</h3>
+                <div class="content__text">С нами удобно вам, вашим клиентам и курьерским службам. Для вас наши услуги бесплатны, так как мы получаем бонусы от служб доставок за предоставленный объем заказов, а вы получаете надежный сервис в подарок!</div>
+                <button class="button">отправить посылку</button>
+            </div>
+        </article>
+        <article class="steps center">
+            <div class="steps__container">
+                <div class="container_block">
+                    <img src="img/steps_img/step_img-1.png" class="block__img" alt="step_1_img">
+                    <div class="block__text">
+                        <div class="steps__text-h3">Шаг 1</div>
+                        <div class="steps__text-p">Придумайте что и кому отправить</div>
+                    </div>
+                </div>
+                <div class="container_block">
+                    <img src="img/steps_img/step_img-2.png" class="block__img" alt="step_2_img">
+                    <div class="block__text">
+                        <div class="steps__text-h3">Шаг 2</div>
+                        <div class="steps__text-p">Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос, уточнит все необходимые данные</div>
+                    </div>
+                </div>
+                <div class="container_block">
+                    <img src="img/steps_img/step_img-3.png" class="block__img" alt="step_3_img">
+                    <div class="block__text">
+                        <div class="steps__text-h3">Шаг 3</div>
+                        <div class="steps__text-p">К Вам приезжает курьер, забирает посылку, Вы подписываете один документ</div>
+                    </div>
+                </div>
+                <div class="container_block">
+                    <img src="img/steps_img/step_img-4.png" class="block__img" ,
+                         alt="step_4_img">
+                    <div class="block__text">
+                        <div class="steps__text-h3">Шаг 4</div>
+                        <div class="steps__text-p">Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="care center">
+            <div class="care__h3">Мы берём все заботы по доставке на себя!</div>
+            <button class="button">отправить посылку</button>
+        </article>
+        <article class="call-back center">
+            <div class="call-back__header">
+                <h1 class="call-back__h2">хотите мы вам перезвоним?</h1>
+                <div class="call-back__text">Закажите звонок, и менеджер вам всё расскажет и объяснит</div>
+            </div>
+            <form action="#" class="call-back__form">
+                <input type="tel" class="call-back__phone" placeholder="Ваш телефон">
+                <input type="submit" class="button__call-back" value="заказать звонок">
+                <input type="checkbox" id="call-back__assent" class="checkbox-name">
+                <label for="call-back__assent">Я согласен на обработку персональных данных</label>
+            </form>
+        </article>
+        <article class="feedback center">
+            <img src="img/arr_left.svg" alt="" class="arrow__left arrow__left_desktop">
+            <img src="img/arr_right.svg" alt="" class="arrow__right arrow__right_desktop">
+            <h1 class="feedback__h1">ОТЗЫВЫ</h1>
+            <div class="feedback__carousel">
+                <div class="feedback__block">
+                    <img src="img/feedback_block_img.jpg" alt="user_foto" class="feedback__block_img">
+                    <div class="feedback__block_header">
+                        <div class="feedback__block_header-name">Дарья</div>
+                        <div class="feedback__block_header-type">La Intuicion</div>
+                        <div class="feedback__block_header-option">
+                            <p>Посылка: товары</p>
+                            <p>Откуда: Москва</p>
+                            <p>Куда: Нижневартовск</p>
+                        </div>
+                    </div>
+                    <div class="feedback__block_text">Отличный и качественный сервис. Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что помимо удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности (ведение адресной базы, выбор и вызов курьера в пару кликов!
+                    </div>
+                </div>
+                <div class="feedback__block hidden">
+                    <img src="img/feedback_block_img1.jpg" alt="user_foto" class="feedback__block_img">
+                    <div class="feedback__block_header">
+                        <div class="feedback__block_header-name">Елена</div>
+                        <div class="feedback__block_header-type">Global Logic</div>
+                        <div class="feedback__block_header-option">
+                            <p>Посылка: товары</p>
+                            <p>Откуда: Москва</p>
+                            <p>Куда: Калининград</p>
+                        </div>
+                    </div>
+                    <div class="feedback__block_text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за отзывчивость.
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="advantages center">
+            <h1 class="advantages__h1">НАШИ ПРЕИМУЩЕСТВА</h1>
+            <div class="advantages__container">
+                <div class="advantages__container_block">
+                    <div class="advantages__block">
+                        <img src="img/advantages_img/advantage_img_1.png" alt="" class="advantages__block_img">
+                    </div>
+                    <p>Бесплатный сервис</p>
+                </div>
+                <div class="advantages__container_block">
+                    <div class="advantages__block">
+                        <img src="img/advantages_img/advantage_img_2.png" alt="" class="advantages__block_img">
+                    </div>
+                    <p>Огромный выбор вариантов доставки</p>
+                </div>
+                <div class="advantages__container_block">
+                    <div class="advantages__block">
+                        <img src="img/advantages_img/advantage_img_3.png" alt="" class="advantages__block_img">
+                    </div>
+                    <p>4 параметра лучшего предложения</p>
+                </div>
+                <div class="advantages__container_block">
+                    <div class="advantages__block">
+                        <img src="img/advantages_img/advantage_img_4.png" alt="" class="advantages__block_img">
+                    </div>
+                    <p>Удобство заказа</p>
+                </div>
+                <div class="advantages__container_block">
+                    <div class="advantages__block">
+                        <img src="img/advantages_img/advantage_img_5.png" alt="" class="advantages__block_img">
+                    </div>
+                    <p>Online-поддержка</p>
+                </div>
+                <div class="advantages__container_block">
+                    <div class="advantages__block">
+                        <img src="img/advantages_img/advantage_img_6.png" alt="" class="advantages__block_img">
+                    </div>
+                    <p>Единый номер отслеживания</p>
+                </div>
+            </div>
+        </article>
+        <article class="guarantee center">
+            <img src="img/arr_left.svg" alt="" class="arrow__left guarantee__arrow_left">
+            <img src="img/arr_right.svg" alt="" class="arrow__right guarantee__arrow_right">
+            <h1 class="guarantee__h1">НАШИ ГАРАНТИИ</h1>
+            <div class="guarantee__main_block">
+                <div class="guarantee__content">
+                    <div class="guarantee__header">
+                        <div class="guarantee__header_circle">
+                            <img src="img/guarantee_img/guarantee_img_1.png" alt="img" class="guarantee__header_circle-img">
+                        </div>
+                        <h3 class="guarantee__header_h3">Страховка отправлений</h3>
+                    </div>
+                    <div class="guarantee__header_text">Контроль работы курьеров в онлайн режиме. Страхование по запросу клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</div>
+                    <button class="button button__short">подробнее</button>
+                </div>
+                <div class="guarantee__content hidden">
+                    <div class="guarantee__header">
+                        <div class="guarantee__header_circle">
+                            <img src="img/guarantee_img/guarantee_img_2.png" alt="img" class="guarantee__header_circle-img">
+                        </div>
+                        <h3 class="guarantee__header_h3">Прозрачность расчетов</h3>
+                    </div>
+                    <div class="guarantee__header_text">Чтобы узнать точную стоимость отправления вам не нужно связываться с каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим сервисом</div>
+                    <button class="button">подробнее</button>
+                </div>
+                <div class="guarantee__content hidden">
+                    <div class="guarantee__header">
+                        <div class="guarantee__header_circle">
+                            <img src="img/guarantee_img/guarantee_img_3.png" alt="img" class="guarantee__header_circle-img">
+                        </div>
+                        <h3 class="guarantee__header_h3">Лучшие поставщики</h3>
+                    </div>
+                    <div class="guarantee__header_text">Мы работаем с самыми надежными и известными операторами доставки. Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</div>
+                    <button class="button">подробнее</button>
+                </div>
+            </div>
+        </article>
+        <aside class="doubts center">
+            <h1 class="doubts__h1">Остались сомнения?</h1>
+            <div class="doubts__main_block">
+                <div class="doubts__content">
+                    <div class="doubts__content_box">
+                        <p class="doubts__content_box-text">На бумажную волокиту уйдёт много времени, а мне нужно доставить срочно!</p>
+                        <img src="img/arrow_down.svg" alt="" class="doubts__content_box-img">
+                    </div>
+                </div>
+                <div class="doubts__content">
+                    <div class="doubts__content_box">
+                        <p class="doubts__content_box-text">Мне необходимо совершить доставку по нескольким адресам, нужно много чего заполнять</p>
+                        <img src="img/arrow_down.svg" alt="" class="doubts__content_box-img">
+                    </div>
+                </div>
+                <div class="doubts__content">
+                    <div class="doubts__content_box">
+                        <p class="doubts__content_box-text">Вы не сможете доставить посылку за границу</p>
+                        <img src="img/arrow_down.svg" alt="" class="doubts__content_box-img">
+                    </div>
+                </div>
+                <div class="doubts__content">
+                    <div class="doubts__content_box">
+                        <p class="doubts__content_box-text">Вы не занимаетесь такими простыми грузами, как мебель</p>
+                        <img src="img/arrow_down.svg" alt="" class="doubts__content_box-img">
+                    </div>
+                </div>
+                <div class="doubts__content">
+                    <div class="doubts__content_box">
+                        <p class="doubts__content_box-text">Я отправляю вместе с коллегами, мы можем легко запутаться где чьё</p>
+                        <img src="img/arrow_down.svg" alt="" class="doubts__content_box-img">
+                    </div>
+                </div>
+                <div class="doubts__content">
+                    <div class="doubts__content_box">
+                        <p class="doubts__content_box-text">Нужно заполнять кучу документов</p>
+                        <img src="img/arrow_down.svg" alt="" class="doubts__content_box-img">
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <aside class="logistics center">
+            <img src="img/arr_left.svg" alt="" class="arrow__left arrow__left_desktop">
+            <img src="img/arr_right.svg" alt="" class="arrow__right arrow__right_desktop">
+            <div class="logistics__block">
+                <img src="img/logistics_img/bringo.png" alt="" class="logistics__block_img">
+                <img src="img/logistics_img/cdek.png" alt="" class="logistics__block_img">
+                <img src="img/logistics_img/city_express.png" alt="" class="logistics__block_img">
+                <img src="img/logistics_img/dpd.png" alt="" class="logistics__block_img">
+                <img src="img/logistics_img/pony.png" alt="" class="logistics__block_img">
+                <img src="img/logistics_img/spsr.png" alt="" class="logistics__block_img">
+                <img src="img/logistics_img/tnt.png" alt="" class="logistics__block_img hidden">
+                <img src="img/logistics_img/ups.png" alt="" class="logistics__block_img hidden">
+            </div>
+        </aside>
+        <footer class="footer center">
+            <h1 class="footer__h1">ОСТАЛИСЬ ВОПРОСЫ?</h1>
+            <form action="#" class="footer__form">
+                <input type="tel" class="footer__form_phone" placeholder="Ваш телефон">
+                <input type="submit" class="button" value="заказать звонок">
+                <input type="checkbox" id="footer__checkbox" class="footer__checkbox">
+                <label for="footer__checkbox">Я согласен на обработку персональных данных</label>
+            </form>
+        </footer>
+        <nav class="footer__nav center">
+            <a href="index.html" ><img src="img/footer_logo.png" class="footer__logo" alt="logo"></a>
+            <nav class="nav10">
+                <div class="header__menu footer__menu">
+                    <div class="menu10">
+                        <ul class="menu__ul10">
+                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Главная</a></li>
+                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Отзывы</a></li>
+                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Гарантии</a></li>
+                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Описание</a></li>
+                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Партнёры</a></li>
+                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Преимущества</a></li>
+                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <aside class="copy center">
+            <p class="copy__text">&copy; Сами копипастим и вам разрешаем <span>2019</span></p>
+        </aside>
+    </section>
+</body>
+</html>

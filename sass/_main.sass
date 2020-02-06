@@ -1,0 +1,156 @@
+.center
+  padding: 0 calc(50% - 140px)
+
+.header
+  height: 100vh
+  padding-top: 30px
+  background-image: url("img/header_img.jpeg")
+  background-size: cover
+  background-position: 82%
+  background-repeat: no-repeat
+  &__top
+    display: flex
+    justify-content: space-between
+
+.header
+  position: relative
+  &__open,
+  &__close
+    color: #fff
+    font-size: 20px
+    display: block
+  &__close
+    right: 30px
+    top: 30px
+    position: absolute
+  &__switcher
+    visibility: hidden
+    position: absolute
+    left: -999999px
+    &:checked ~ nav
+      right: 0
+
+.logo
+  width: 100px
+  height: 29px
+
+.menu
+  list-style: none
+  &__link
+    color: #fff
+    font-size: 24px
+    padding: 32px 16px
+    display: block
+
+.send-box
+  position: absolute
+  top: 105%
+  &__h2
+    font-size: 32px
+    line-height: 38px
+  &__h3
+    font-size: 24px
+.button
+  width: 280px
+  height: 50px
+  background: #008DCD
+  border-radius: 30px
+  align-items: center
+  text-align: center
+  text-transform: uppercase
+  font-size: 16px
+  color: #FFFFFF
+  border: 1px solid #008DCD
+.aggregator
+  background: #F7F7F7
+  display: flex
+  flex-direction: column
+
+.steps
+  padding-top: 25px
+  padding-bottom: 55px
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.container_block
+  margin-top: 30px
+
+.block
+  &__img
+    width: 276px
+
+.steps__text
+  &-h3
+    font-size: 26px
+    font-weight: 700
+    margin-top: 20px
+    margin-bottom: 8px
+  &-text
+    font-size: 14px
+    line-height: 17px
+
+
+.care
+  padding-top: 23px
+  padding-bottom: 23px
+  background: #F7F7F7
+
+
+.call-back
+  background: #008DCD
+  color: #FFFFFF
+  position: relative
+  &__phone
+    height: 48px
+    border: 1px solid #FFFFFF
+    border-radius: 30px
+    background: #008DCD
+    padding-left: 15px
+    padding-right: 15px
+    color: #FFFFFF
+    font-size: 18px
+    &::placeholder
+      font-size: 16px
+      color: #FFFFFF
+      padding-left: 10px
+
+.call-back__form
+  & input[type="checkbox"]
+    position: absolute
+    width: 10px
+    border-color: #FFFFFF
+    top: 92%
+    left: 8%
+  & label
+    position: absolute
+    top: 92%
+    left: 13%
+    font-size: 10px
+    line-height: 12px
+
+.button__call-back
+  height: 48px
+  border: 1px solid #FFCC00
+  background: #FFCC00
+  border-radius: 30px
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: right
+  padding-right: 25px
+  margin-top: 10px
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media"

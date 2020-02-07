@@ -166,17 +166,81 @@
     top: 50%
     right: 0
 
-
 .advantages
   background: #F7F7F7
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
   &__block
     display: flex
     justify-content: center
     align-items: center
-    width: 86px
-    height: 86px
     border-radius: 50%
     background: #FFFFFF
 
+  .container__block
+    text-align: center
+
+.guarantee
+  &__main
+    display: flex
+  &__img
+    width: 50%
+
+.guarantee__circle
+    width: 62px
+    height: 62px
+    border-radius: 50%
+    background: #F7F7F7
+
+.doubts
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  background: #D2ECF7
+  &__block
+    background: #FFFFFF
+    border-radius: 32px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__main
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: space-between
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &___img
+    width: 10px
+
+.logistics
+  &__block
+    position: relative
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+
+.footer
+  display: flex
+  background: #E9E9E9
+  border-bottom: 1px solid #C4C4C4
+  &__form
+    position: relative
+  &__phone
+    border-radius: 30px
+    border: 1px solid #363636
+    height: 48px
+    padding: 0 25px
+    font-size: 16px
+    background: #E9E9E9
+    &::placeholder
+      color: #363636
+      font-size: 14px
 
 @import "media"

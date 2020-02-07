@@ -109,6 +109,49 @@
     padding-right: 25px
     margin-top: 10px
 
+  .feedback
+    &__h2
+      font-size: 28px
+    &__slider
+      padding-right: 25px
+      padding-left: 25px
+
+  .slider
+    &__hidden
+      display: none
+    &__top
+      margin: 15px 0
+      display: flex
+      justify-content: space-between
+    &__header
+      width: 110px
+    &__img
+      width: 100px
+      height: 100px
+    &__header
+      width: 110px
+      &_name
+        font-size: 26px
+        margin-bottom: 3px
+      &_type
+        font-size: 18px
+        line-height: 26px
+      &_option
+        font-size: 10px
+        line-height: 15px
+    &__text
+      font-size: 13px
+      line-height: 17px
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px)
   .center
     padding: 0 calc(50% - 350px)
@@ -215,6 +258,86 @@
       line-height: 34px
       font-weight: 700
       margin-bottom: 0
+  .call-back
+    display: flex
+    justify-content: space-between
+    padding-top: 32px
+    padding-bottom: 35px
+    &__form
+      width: 280px
+    &__header
+      width: 300px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__h2
+      font-size: 28px
+      line-height: 34px
+    &__text
+      font-size: 14px
+      line-height: 15px
+      margin-bottom: 0
+    &__phone
+      width: 248px
+      padding-left: 15px
+      padding-right: 15px
+      font-size: 18px
+      &::placeholder
+        font-size: 16px
+        padding-left: 10px
+
+  .call-back__form
+    & input[type="checkbox"]
+      top: 107%
+      left: 0
+    & label
+      position: absolute
+      top: 107%
+      left: 7%
+
+  .button__call-back
+    width: 280px
+    padding-right: 25px
+    text-align: right
+
+  .feedback
+    padding-top: 50px
+    padding-bottom: 50px
+    &__hidden
+      display: block
+    &__h2
+      font-size: 36px
+    &__slider
+      display: flex
+      justify-content: space-between
+      padding-left: 60px
+      padding-right: 60px
+
+  .slider
+    width: 280px
+    &__top
+      margin: 30px 0 15px 0
+      display: flex
+      justify-content: space-between
+    &__header
+      width: 110px
+    &__img
+      width: 100px
+      height: 100px
+    &__header
+      width: 160px
+      &_name
+        font-size: 26px
+        margin-bottom: 3px
+      &_type
+        font-size: 18px
+        line-height: 26px
+      &_option
+        font-size: 10px
+        line-height: 15px
+    &__text
+      font-size: 13px
+      line-height: 17px
 
 
 
@@ -317,3 +440,82 @@
       font-size: 34px
       font-weight: 700
       margin-bottom: 0
+  .call-back
+    padding-top: 75px
+    padding-bottom: 75px
+    &__form
+      width: 360px
+    &__header
+      width: 735px
+    &__h2
+      font-size: 44px
+    &__text
+      font-size: 23px
+      line-height: 25px
+      margin-bottom: 0
+    &__phone
+      width: 328px
+      padding-left: 15px
+      padding-right: 15px
+      font-size: 18px
+      &::placeholder
+        font-size: 16px
+        padding-left: 10px
+
+  .call-back__form
+    & input[type="checkbox"]
+      top: 115%
+      left: 0
+    & label
+      position: absolute
+      top: 115%
+      left: 8%
+
+  .button__call-back
+    width: 360px
+    padding-right: 0
+    text-align: center
+
+  .feedback
+    padding-top: 70px
+    padding-bottom: 70px
+    &__hidden
+      display: block
+    &__h2
+      font-size: 36px
+    &__slider
+      display: flex
+      justify-content: space-between
+      padding-left: 100px
+      padding-right: 100px
+
+  .slider
+    width: 460px
+    &__top
+      width: 460px
+      margin: 50px 0 25px 0
+      display: flex
+      justify-content: space-between
+    &__img
+      width: 160px
+      height: 160px
+    &__header
+      width: 260px
+      &_name
+        font-size: 36px
+        margin-bottom: 0
+      &_type
+        font-size: 24px
+        line-height: 42px
+      &_option
+        font-size: 16px
+        line-height: 27px
+    &__text
+      font-size: 16px
+      line-height: 20px
+
+  .arrow
+    &__left
+      height: 30px
+    &__right
+      height: 30px

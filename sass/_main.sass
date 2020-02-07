@@ -91,17 +91,17 @@
     font-size: 14px
     line-height: 17px
 
-
 .care
   padding-top: 23px
   padding-bottom: 23px
   background: #F7F7F7
 
-
 .call-back
   background: #008DCD
   color: #FFFFFF
   position: relative
+  &__h2
+    text-transform: uppercase
   &__phone
     height: 48px
     border: 1px solid #FFFFFF
@@ -117,16 +117,17 @@
       padding-left: 10px
 
 .call-back__form
+  position: relative
   & input[type="checkbox"]
     position: absolute
     width: 10px
     border-color: #FFFFFF
-    top: 92%
-    left: 8%
+    top: 106%
+    left: 0
   & label
     position: absolute
-    top: 92%
-    left: 13%
+    top: 106%
+    left: 7%
     font-size: 10px
     line-height: 12px
 
@@ -142,15 +143,40 @@
   padding-right: 25px
   margin-top: 10px
 
+.feedback
+  display: flex
+  flex-direction: column
+  padding-top: 25px
+  padding-bottom: 25px
+  &__slider
+    position: relative
+
+.slider
+  &__top
+    display: flex
+    flex-direction: row
+
+.arrow
+  &__left
+    position: absolute
+    top: 50%
+    left: 0
+  &__right
+    position: absolute
+    top: 50%
+    right: 0
 
 
-
-
-
-
-
-
-
+.advantages
+  background: #F7F7F7
+  &__block
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 86px
+    height: 86px
+    border-radius: 50%
+    background: #FFFFFF
 
 
 @import "media"

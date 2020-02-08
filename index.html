@@ -271,23 +271,24 @@
                 <label for="form__checkbox">Я согласен на обработку персональных данных</label>
             </form>
         </footer>
-        <nav class="footer__nav center">
-            <a href="index.html" ><img src="img/footer_logo.png" class="footer__logo" alt="logo"></a>
-            <nav class="nav10">
-                <div class="header__menu footer__menu">
-                    <div class="menu10">
-                        <ul class="menu__ul10">
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Главная</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Отзывы</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Гарантии</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Описание</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Партнёры</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Преимущества</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <nav class="footer_nav center">
+            <div class="header__top header__bot">
+                <a href="index.html" class="header__logo footer__logo"><img src="img/footer_logo.png" alt="logo" class="logo logo__footer"></a>
+                <input class="header__switcher" type="checkbox" id="menu__bot">
+                <label class="header__open header__open_bot" for="menu__bot"><i class="fas fa-bars"></i></label>
+                <nav class="nav bot__nav">
+                    <ul class="menu menu__footer">
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Главная</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Отзывы</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Гарантии</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Описание</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Партнёры</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Преимущества</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">FAQ</a></li>
+                    </ul>
+                    <label class="header__close header__close_bot" for="menu__bot"><i class="fas fa-times"></i></label>
+                </nav>
+            </div>
         </nav>
         <aside class="copy center">
             <p class="copy__text">&copy; Сами копипастим и вам разрешаем <span>2019</span></p>

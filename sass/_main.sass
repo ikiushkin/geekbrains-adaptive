@@ -2,6 +2,7 @@
   padding: 0 calc(50% - 140px)
 
 .header
+  position: relative
   height: 100vh
   padding-top: 30px
   background-image: url("img/header_img.jpeg")
@@ -11,9 +12,6 @@
   &__top
     display: flex
     justify-content: space-between
-
-.header
-  position: relative
   &__open,
   &__close
     color: #fff
@@ -29,6 +27,11 @@
     left: -999999px
     &:checked ~ nav
       right: 0
+
+.header__close_bot
+  color: #000
+.header__open_bot
+  color: #000
 
 .logo
   width: 100px
@@ -242,5 +245,17 @@
     &::placeholder
       color: #363636
       font-size: 14px
+
+.footer_nav
+  background: #E9E9E9
+
+.menu__footer
+  & a
+    color: #000000
+
+.header__bot
+  display: flex
+  align-items: center
+
 
 @import "media"

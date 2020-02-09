@@ -3,11 +3,32 @@
     margin-bottom: 250px
 
   .menu
+    padding: 15px 25px
     height: 100vh
     display: flex
     flex-direction: column
-    align-items: center
+    align-items: flex-start
+    justify-content: flex-start
+    background: #FFFFFF
+    &__link
+      color: black
+    &__social
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 20px
+
+  .social__link
+    width: 36px
+    height: 36px
+    display: flex
     justify-content: center
+    align-items: center
+    border-radius: 50%
+    font-size: 20px
+    color: #FFFFFF
+    background: #008DCD
+    text-decoration: none
 
   .nav
     position: fixed
@@ -16,6 +37,11 @@
     transition: all 0.5s
     width: 100%
     height: 100vh
+    z-index: 2
+
+  .footer_menu
+    background: #FFFFFF
+    border-bottom: none
 
   .button
     padding-right: 25px
@@ -256,6 +282,8 @@
     &__h2
       font-size: 18px
       line-height: 22px
+      &_menu
+        margin-bottom: 15px
     &__phone
       width: 228px
     & .button
@@ -275,6 +303,12 @@
   .menu__link_bot
     padding: 0
 
+  .copy
+    padding-top: 15px
+    padding-bottom: 15px
+    font-size: 10px
+    font-weight: 700
+
 @media (min-width: 768px)
   .center
     padding: 0 calc(50% - 350px)
@@ -292,10 +326,22 @@
     display: flex
     flex-direction: row
     justify-content: space-between
+    animation: bounceInRight 2s linear both
     &__link
       font-size: 14px
       line-height: 17px
       padding: 8px 14px
+      &_bot
+        color: black
+
+  .logo
+    animation: bounceInLeft 2s linear both
+
+  .menu__logo
+    display: none
+
+  .footer_menu
+    display: none
 
   .send-box
     width: 400px
@@ -612,6 +658,12 @@
   .menu__link_bot
     padding: 7px 11px
 
+  .copy
+    padding-top: 15px
+    padding-bottom: 15px
+    font-size: 12px
+    font-weight: 700
+
 @media (min-width: 1440px)
   .center
     padding: 0 calc(50% - 580px)
@@ -631,14 +683,24 @@
   .logo
     width: 160px
     height: 46px
+    animation: bounceInLeft 2s linear both
+
+  .menu__logo
+    display: none
 
   .menu
     display: flex
     flex-direction: row
     justify-content: space-between
+    animation: bounceInRight 2s linear both
     &__link
       font-size: 18px
       padding: 15px 30px
+      &_bot
+        color: black
+
+  .footer_menu
+    display: none
 
   .send-box
     width: 800px
@@ -899,3 +961,9 @@
   .logo__footer
       width: 160px
       height: 48px
+
+  .copy
+    padding-top: 20px
+    padding-bottom: 20px
+    font-size: 16px
+    font-weight: 700

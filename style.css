@@ -330,10 +330,6 @@ body {
   border-color: #FFFFFF;
   top: 106%;
   left: 0;
-  transition: all 1s;
-}
-.call-back__form input[type=checkbox]:hover {
-  transform: scale(1.5);
 }
 .call-back__form label {
   position: absolute;
@@ -341,10 +337,6 @@ body {
   left: 7%;
   font-size: 10px;
   line-height: 12px;
-  transition: all 1s;
-}
-.call-back__form label:hover {
-  transform: scale(1.1);
 }
 
 .button__call-back {
@@ -383,15 +375,13 @@ body {
   position: relative;
 }
 
-.slider {
-  transition: all 2s;
-}
-.slider:hover {
-  transform: scale(1.1);
-}
 .slider__top {
   display: flex;
   flex-direction: row;
+  transition: all 2s;
+}
+.slider__top:hover {
+  transform: scale(1.2);
 }
 
 .arrow__left {
@@ -451,19 +441,13 @@ body {
   transition: all 1s;
 }
 .guarantee__img:hover {
-  transform: scale(1.3) rotateX(360deg);
+  transform: scale(1.5) rotateX(360deg);
 }
 .guarantee__h3 {
   transition: all 1s;
 }
 .guarantee__h3:hover {
-  transform: scale(1.1);
-}
-.guarantee__text {
-  transition: all 1s;
-}
-.guarantee__text:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .guarantee__circle {
@@ -740,6 +724,11 @@ body {
 
   .feedback__h2 {
     font-size: 28px;
+    width: 140px;
+    transition: all 1s;
+  }
+  .feedback__h2:hover {
+    transform: scale(1.2) translateX(20px);
   }
   .feedback__slider {
     padding-right: 25px;
@@ -787,6 +776,10 @@ body {
   }
   .advantages__h2 {
     font-size: 26px;
+    transition: all 1s;
+  }
+  .advantages__h2:hover {
+    transform: scale(1.2) translateX(20px);
   }
   .advantages__block {
     width: 86px;
@@ -809,6 +802,10 @@ body {
   }
   .guarantee__h1 {
     font-size: 26px;
+    transition: all 1s;
+  }
+  .guarantee__h1:hover {
+    transform: scale(1.2) translateX(20px);
   }
   .guarantee__main {
     position: relative;
@@ -847,6 +844,7 @@ body {
     margin-bottom: 15px;
     font-size: 12px;
     line-height: 16px;
+    transform: none;
   }
 
   .button_short {

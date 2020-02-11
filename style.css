@@ -463,13 +463,6 @@ body {
   justify-content: space-between;
   background: #D2ECF7;
 }
-.doubts__h2 {
-  transition: all 1s;
-}
-.doubts__h2:hover {
-  transform: scale(1.2) rotateX(360deg) translateX(65px);
-  color: #008DCD;
-}
 .doubts__block {
   background: #FFFFFF;
   border-radius: 32px;
@@ -860,6 +853,11 @@ body {
     font-size: 26px;
     line-height: 34px;
     text-transform: uppercase;
+    transition: all 1s;
+  }
+  .doubts__h2:hover {
+    transform: scale(1.2) translateX(25px);
+    color: #008DCD;
   }
   .doubts__main {
     height: 530px;
@@ -1286,6 +1284,11 @@ body {
     font-size: 34px;
     line-height: 34px;
     text-transform: uppercase;
+    transition: all 1s;
+  }
+  .doubts__h2:hover {
+    transform: scale(1.2) rotateX(360deg) translateX(65px);
+    color: #008DCD;
   }
   .doubts__main {
     height: 350px;
@@ -1698,6 +1701,11 @@ body {
     font-size: 34px;
     line-height: 34px;
     text-transform: uppercase;
+    transition: all 1s;
+  }
+  .doubts__h2:hover {
+    transform: scale(1.2) rotateX(360deg) translateX(65px);
+    color: #008DCD;
   }
   .doubts__main {
     height: 230px;

@@ -173,8 +173,6 @@ body {
 }
 
 .send-box {
-  position: absolute;
-  top: 105%;
   animation: zoomIn 1s linear both;
 }
 .send-box__h2 {
@@ -613,7 +611,7 @@ body {
 
   .send-box {
     position: absolute;
-    top: 105%;
+    top: 102%;
     min-height: 200px;
     display: flex;
     flex-direction: column;

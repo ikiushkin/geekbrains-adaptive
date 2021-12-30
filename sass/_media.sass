@@ -3,11 +3,32 @@
     margin-bottom: 250px
 
   .menu
+    padding: 15px 25px
     height: 100vh
     display: flex
     flex-direction: column
-    align-items: center
+    align-items: flex-start
+    justify-content: flex-start
+    background: #FFFFFF
+    &__link
+      color: black
+    &__social
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 20px
+
+  .social__link
+    width: 36px
+    height: 36px
+    display: flex
     justify-content: center
+    align-items: center
+    border-radius: 50%
+    font-size: 20px
+    color: #FFFFFF
+    background: #008DCD
+    text-decoration: none
 
   .nav
     position: fixed
@@ -16,6 +37,11 @@
     transition: all 0.5s
     width: 100%
     height: 100vh
+    z-index: 2
+
+  .footer_menu
+    background: #FFFFFF
+    border-bottom: none
 
   .button
     padding-right: 25px
@@ -23,7 +49,7 @@
 
   .send-box
     position: absolute
-    top: 105%
+    top: 102%
     min-height: 200px
     display: flex
     flex-direction: column
@@ -112,6 +138,10 @@
   .feedback
     &__h2
       font-size: 28px
+      width: 140px
+      transition: all 1s
+      &:hover
+        transform: scale(1.1)
     &__slider
       padding-right: 25px
       padding-left: 25px
@@ -148,6 +178,9 @@
     padding-bottom: 25px
     &__h2
       font-size: 26px
+      transition: all 1s
+      &:hover
+        transform: scale(1.1)
     &__block
       width: 86px
       height: 86px
@@ -165,6 +198,9 @@
     padding-bottom: 25px
     &__h1
       font-size: 26px
+      transition: all 1s
+      &:hover
+        transform: scale(1.2) translateX(20px)
     &__main
       position: relative
       padding-right: 20px
@@ -196,6 +232,7 @@
       margin-bottom: 15px
       font-size: 12px
       line-height: 16px
+      transform: none
 
   .button_short
     width: 230px
@@ -208,6 +245,10 @@
       font-size: 26px
       line-height: 34px
       text-transform: uppercase
+      transition: all 1s
+      &:hover
+        transform: scale(1.1)
+        color: #008DCD
     &__main
       height: 530px
       display: flex
@@ -256,11 +297,32 @@
     &__h2
       font-size: 18px
       line-height: 22px
+      &_menu
+        margin-bottom: 15px
     &__phone
       width: 228px
     & .button
       padding-right: 0
       text-align: center
+
+
+  .footer_nav
+    padding-top: 15px
+    padding-bottom: 15px
+    border-bottom: 1px solid #C4C4C4
+
+  .logo__footer
+    width: 140px
+    height: 57px
+
+  .menu__link_bot
+    padding: 0
+
+  .copy
+    padding-top: 15px
+    padding-bottom: 15px
+    font-size: 10px
+    font-weight: 700
 
 @media (min-width: 768px)
   .center
@@ -279,11 +341,22 @@
     display: flex
     flex-direction: row
     justify-content: space-between
-    &__list
+    animation: bounceInRight 2s linear both
     &__link
       font-size: 14px
       line-height: 17px
       padding: 8px 14px
+      &_bot
+        color: black
+
+  .logo
+    animation: bounceInLeft 2s linear both
+
+  .menu__logo
+    display: none
+
+  .footer_menu
+    display: none
 
   .send-box
     width: 400px
@@ -520,6 +593,10 @@
       font-size: 34px
       line-height: 34px
       text-transform: uppercase
+      transition: all 1s
+      &:hover
+        transform: scale(1.2) rotateX(360deg) translateX(65px)
+        color: #008DCD
     &__main
       height: 350px
     &__block
@@ -583,6 +660,29 @@
       width: 220px
       margin-left: 15px
 
+  .footer_nav
+    padding-top: 20px
+    padding-bottom: 30px
+    border-bottom: 1px solid #C4C4C4
+
+  .header__bot
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .logo__footer
+    width: 100px
+    height: 30px
+
+  .menu__link_bot
+    padding: 7px 11px
+
+  .copy
+    padding-top: 15px
+    padding-bottom: 15px
+    font-size: 12px
+    font-weight: 700
+
 @media (min-width: 1440px)
   .center
     padding: 0 calc(50% - 580px)
@@ -602,14 +702,24 @@
   .logo
     width: 160px
     height: 46px
+    animation: bounceInLeft 2s linear both
+
+  .menu__logo
+    display: none
 
   .menu
     display: flex
     flex-direction: row
     justify-content: space-between
+    animation: bounceInRight 2s linear both
     &__link
       font-size: 18px
       padding: 15px 30px
+      &_bot
+        color: black
+
+  .footer_menu
+    display: none
 
   .send-box
     width: 800px
@@ -798,7 +908,7 @@
       margin-top: 30px
     &__text
       margin-top: 15px
-      margin-bottom: 25px
+      margin-bottom: 26px
       font-size: 16px
       line-height: 20px
 
@@ -816,6 +926,10 @@
       font-size: 34px
       line-height: 34px
       text-transform: uppercase
+      transition: all 1s
+      &:hover
+        transform: scale(1.2) rotateX(360deg) translateX(65px)
+        color: #008DCD
     &__main
       height: 230px
     &__block
@@ -861,3 +975,18 @@
       text-align: center
       width: 360px
       margin-left: 15px
+
+  .footer_nav
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: 1px solid #C4C4C4
+
+  .logo__footer
+      width: 160px
+      height: 48px
+
+  .copy
+    padding-top: 20px
+    padding-bottom: 20px
+    font-size: 16px
+    font-weight: 700

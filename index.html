@@ -16,6 +16,7 @@
             <label class="header__open" for="menu"><i class="fas fa-bars"></i></label>
             <nav class="nav">
                 <ul class="menu">
+                    <a href="index.html" class="logo menu__logo"><img src="img/footer_logo.png" alt="logo"></a>
                     <li class="menu__list"><a href="#" class="menu__link">Главная</a></li>
                     <li class="menu__list"><a href="#" class="menu__link">Отзывы</a></li>
                     <li class="menu__list"><a href="#" class="menu__link">Гарантии</a></li>
@@ -23,8 +24,22 @@
                     <li class="menu__list"><a href="#" class="menu__link">Партнёры</a></li>
                     <li class="menu__list"><a href="#" class="menu__link">Преимущества</a></li>
                     <li class="menu__list"><a href="#" class="menu__link">FAQ</a></li>
+                    <footer class="footer footer_menu">
+                        <h1 class="footer__h2 footer__h2_menu">ОСТАЛИСЬ ВОПРОСЫ?</h1>
+                        <form action="#" class="footer__form">
+                            <input type="tel" class="footer__phone" placeholder="Ваш телефон">
+                            <input type="submit" class="button" value="заказать звонок">
+                            <input type="checkbox" id="menu__top_form" class="footer__checkbox">
+                            <label for="menu__top_form">Я согласен на обработку персональных данных</label>
+                        </form>
+                        <div class="menu__social">
+                            <a href="#" class="social__link"><i class="fab fa-vk"></i></a>
+                            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </footer>
                 </ul>
-                <label class="header__close" for="menu"><i class="fas fa-times"></i></label>
+                <label class="header__close header__close_bot" for="menu"><i class="fas fa-times"></i></label>
             </nav>
         </div>
         <div class="send-box">
@@ -271,23 +286,39 @@
                 <label for="form__checkbox">Я согласен на обработку персональных данных</label>
             </form>
         </footer>
-        <nav class="footer__nav center">
-            <a href="index.html" ><img src="img/footer_logo.png" class="footer__logo" alt="logo"></a>
-            <nav class="nav10">
-                <div class="header__menu footer__menu">
-                    <div class="menu10">
-                        <ul class="menu__ul10">
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Главная</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Отзывы</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Гарантии</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Описание</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Партнёры</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">Преимущества</a></li>
-                            <li class="menu__ul_list"><a href="#" class="menu__ul_list-link">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <nav class="footer_nav center">
+            <div class="header__top header__bot">
+                <a href="index.html" class="header__logo footer__logo"><img src="img/footer_logo.png" alt="logo" class="logo logo__footer"></a>
+                <input class="header__switcher" type="checkbox" id="menu__bot">
+                <label class="header__open header__open_bot" for="menu__bot"><i class="fas fa-bars"></i></label>
+                <nav class="nav bot__nav">
+                    <ul class="menu">
+                        <a href="index.html" class="menu__logo"><img src="img/footer_logo.png" alt="logo"></a>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Главная</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Отзывы</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Гарантии</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Описание</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Партнёры</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">Преимущества</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link menu__link_bot">FAQ</a></li>
+                        <footer class="footer footer_menu">
+                            <h1 class="footer__h2 footer__h2_menu">ОСТАЛИСЬ ВОПРОСЫ?</h1>
+                            <form action="#" class="footer__form">
+                                <input type="tel" class="footer__phone" placeholder="Ваш телефон">
+                                <input type="submit" class="button" value="заказать звонок">
+                                <input type="checkbox" id="form" class="footer__checkbox">
+                                <label for="form">Я согласен на обработку персональных данных</label>
+                            </form>
+                            <div class="menu__social">
+                                <a href="#" class="social__link"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </footer>
+                    </ul>
+                    <label class="header__close header__close_bot" for="menu__bot"><i class="fas fa-times"></i></label>
+                </nav>
+            </div>
         </nav>
         <aside class="copy center">
             <p class="copy__text">&copy; Сами копипастим и вам разрешаем <span>2019</span></p>
